@@ -1,7 +1,10 @@
-public class Cliente {
+public class Produto {
 
     private String nome;
-    private String endereco;
+    private String categoria;
+    private Number codigo;
+    private Number preco;
+    
 
     
     
