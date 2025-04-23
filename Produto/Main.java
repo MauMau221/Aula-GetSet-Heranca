@@ -1,19 +1,28 @@
 public class Main {
 
     public static void main(String[] args) {
-        PessoaFisica pessoaFisica = new PessoaFisica();
-        pessoaFisica.setNome("Mauricio");
-        pessoaFisica.setEndereco("Rua tal");
-        pessoaFisica.setCpf("44444444");
-        pessoaFisica.juntar();
-        System.out.println(pessoaFisica.getCpf());
+        ProdutoLimpeza produtoLimpeza = new ProdutoLimpeza();
+        produtoLimpeza.setNome("Detergente");
+        produtoLimpeza.setCategoria("Limpeza");
+        produtoLimpeza.setCodigo(123);
+        produtoLimpeza.setPreco(5.99);
+        produtoLimpeza.setSecao("Limpeza");
+        produtoLimpeza.setPrateleira("A1");
         
-        PessoaJuridica pessoaJuridica = new PessoaJuridica();
-        pessoaJuridica.setNome("Empresa");
-        pessoaJuridica.setEndereco("Rua tal");
-        pessoaJuridica.setCnpj("0000001");
-        pessoaJuridica.juntar();
-        System.out.println(pessoaJuridica.getCnpj());
-       
+        System.out.println("Produto de Limpeza:");
+        produtoLimpeza.juntar();
+        System.out.println("Seção: " + produtoLimpeza.getSecao());
+        System.out.println("Prateleira: " + produtoLimpeza.getPrateleira());
+        System.out.println();
+        
+        FrutasVerduras frutasVerduras = new FrutasVerduras();
+        frutasVerduras.setNome("Maçã");
+        frutasVerduras.setCategoria("Frutas");
+        frutasVerduras.setCodigo(456);
+        frutasVerduras.setPreco(3.50);
+        frutasVerduras.setPeso(1.5);
+        
+        System.out.println("Frutas e Verduras:");
+        frutasVerduras.juntar();
     }
 }

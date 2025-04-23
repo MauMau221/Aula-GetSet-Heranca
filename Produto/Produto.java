@@ -15,20 +15,43 @@ public class Produto {
     public void setNome(String nome) {
         this.nome = nome;
     }
-    
-    
-    public String getEndereco(){
-        return endereco;
+
+    public String getCategoria(){
+        return categoria;
     }
-    
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
+
+    public void setCategoria(String categoria){
+        this.categoria = categoria;
     }
-    
+
+    public Number getCodigo(){
+        return codigo;
+    }
+
+    public void setCodigo(Number codigo) {
+        this.codigo = codigo;
+    }
+
+    public Number getPreco(){
+        return preco;
+    }
+
+    public void setPreco(Number preco){
+        this.preco = preco;
+    }
+
     public void juntar(){
         System.out.printf("%s \n", nome);
-        System.out.printf("%s \n", endereco);
+        System.out.printf("%s \n", categoria);
+        System.out.printf("%s \n", codigo);
+        System.out.printf("%s \n", preco);
     }
+    
+    
+    
+    
+    
+    
     
     
 }
